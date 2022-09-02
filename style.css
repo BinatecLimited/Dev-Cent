@@ -1,0 +1,40 @@
+/* commenting in CSS */
+body {
+    background-color: black;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+#bg-btn {
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+}
+#bg-btn:hover {
+    background-image: linear-gradient(to right, rgb(129, 140, 248), rgb(216, 180, 254), rgb(249, 168, 212));
+    animation-name: shake;
+    animation-duration:  1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse; 
+}
+@keyframes shake {
+    0% {
+        transform: scale(1);
+    }   
+    50% {
+        transform: scale(0.8);
+    } 
+    100% {
+        transform: scale(1.1);
+    }
+}
+#bg-btn:active {
+    background-image: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
+}
